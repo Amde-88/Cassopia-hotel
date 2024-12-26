@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import './Accommodation.css'; // Import CSS for styles
 import standardRoomImage from '../hotel-images/hotelfont.jpg'; // Ensure the path is correct
 import bathtubImage from '../hotel-images/bathtub.png'; // Import the bathtub image

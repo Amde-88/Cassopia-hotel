@@ -1,8 +1,8 @@
 // src/Cassopia.jsx
 
 import React, { useState } from 'react';
-import { Route, Routes, Link, useNavigate } from 'react-router-dom'
-import Accomodation from './components/Accomodation'
+import { Route, Routes, Link, useNavigate } from 'react-router-dom';
+import Accomodation from './components/Accomodation';
 import Rooms from './components/Rooms';
 import Amenities from './components/Amenities';
 import Book from './components/Book';
