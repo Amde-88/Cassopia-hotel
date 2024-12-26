@@ -5,7 +5,7 @@ import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Accomodation from './components/Accomodation';
 import Rooms from './components/Rooms';
 import Amenities from './components/Amenities'
-import Book from './components/Book';
+import Boo from './components/Book';
 import Clock from './Clock'; // Import the Clock component
 import Contact from './components/Contact';
 import Feedback from './components/Feedback';
