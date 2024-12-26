@@ -31,8 +31,8 @@ const Cassopia = () => {
 
     const handleSearch = (event) => {
         event.preventDefault();
-        const availableRooms = ["Single Room", "Double Room", "Suite", "Deluxe Room"];
-        const amenities = ["WiFi", "Pool", "Parking", "Restaurant"];
+        const availableRoom = ["Single Room", "Double Room", "Suite", "Deluxe Room"];
+        const amenitie = ["WiFi", "Pool", "Parking", "Restaurant"];
         const allItems = [...availableRooms, ...amenities]; // Fixed syntax error
 
         const results = allItems.filter(item =>
