@@ -8,7 +8,7 @@ import Amenities from './components/Amenities';
 import Book from './components/Book';
 import Clock from './Clock'; // Import the Clock component
 import Contact from './components/Contact';
-import Feedback from './components/Feedbact';
+import Feedback from './components/Feedbac';
 import { FaSearch, FaCalendarAlt, FaUsers } from 'react-icons/fa'; // Ensure these are imported
 import './Cassopia.css';
 
