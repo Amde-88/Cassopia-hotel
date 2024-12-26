@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Accomodation from './components/Accomodation';
-import Room from './components/Rooms';
+import Rooms from './components/Rooms';
 import Amenities from './components/Amenities'
 import Book from './components/Book';
 import Clock from './Clock'; // Import the Clock component
