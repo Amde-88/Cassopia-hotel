@@ -1,4 +1,4 @@
-// Amenities.js
+// src/Amenities.jsx
 import React from 'react';
 
 const Amenities = () => {
