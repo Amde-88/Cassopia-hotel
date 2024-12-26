@@ -1,0 +1,327 @@
+.accommodation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+   
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1500px; /* Adjust max width as necessary */
+}
+
+.standard-room-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.description-container {
+    text-align: center;
+    padding: 20px;
+
+}
+.description-container h3{
+    font-size: 2.5em;
+    color: blue;
+    font-weight: bold;
+}
+.description-container h4{
+    font-size: 1.4em;
+    align-items: center;
+line-height: 1.5;
+    margin-left: 90px;
+    margin-right: 90px;
+   
+    color: rgb(7, 7, 7);
+}
+
+.show-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Height for the entire section */
+    width: 1000px;   /* Full width */
+ 
+  margin-right: 180px;
+    background-image: url('../hotel-images/cassopia-hotel.jpeg'); /* Background image */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: rgb(6, 6, 6);
+}
+
+.show-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 826px;
+    height: 350px; /* Height for the container */
+    width: 30%;    /* Width of the container */
+    max-width: 800px; /* Maximum width */
+   margin-top: 100px;
+    background-color: #f4ba69;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.show-information {
+    text-align: center; /* Center-align text */
+  background-color: #f4ba69;
+  
+  height: 300px; /* Height for the container */
+  width: 900px;    /* Width of the container */
+ 
+}
+.show-information h2{
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Button Style */
+.view-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #ff6347; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #33eaea; /* Darker shade on hover */
+}
+
+.accommodation-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.standard-room-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+.description-container {
+    padding: 20px;
+}
+
+.show-detail {
+    margin-top: 20px;
+}
+
+.view-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Icon Row */
+.icon-row {
+    display: flex;
+    justify-content: space-between; /* Space out icons evenly */
+    background-color: #865d05; /* Light background for the icon row */
+   width: 1100px;
+    padding: 20px;
+
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 0px;
+   
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    text-align: center; /* Center-align text */
+}
+
+.icon-image {
+    width: 50px;  /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+    margin-bottom: 1px; /* Space between image and text */
+}
+/* Styles for Premium Section */
+.premium{
+    width: 600px;
+    height: 53px;
+    align-items: center;
+    color: blue;
+  
+}
+
+.show-premium {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+        height: 500px; /* Height for the entire section */
+        width: 1100px;   /* Full width */
+     
+      margin-right: 180px;
+        background-image: url('../hotel-images/hote-latest.avif'); /* Background image */
+        background-size: cover;  /* Cover the entire area */
+        background-position: center; /* Center the background image */
+        color: rgb(6, 6, 6);
+    
+}
+
+.show-premium-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 822px;
+    height: 350px; /* Height for the container */
+    width: 30%;    /* Width of the container */
+    max-width: 800px; /* Maximum width */
+   margin-top: 100px;
+    background-color: #f4ba69;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.premium-information {
+    text-align: center; /* Center-align text */
+  background-color: #f4ba69;
+  
+  height: 300px; /* Height for the container */
+  width: 900px;    /* Width of the container */
+ 
+}
+.premium-information h5{
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Button Style */
+.view-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #ff6347; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #33eaea; /* Darker shade on hover */
+}
+
+.show-Deluxe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 50px;
+    height: 500px; /* Height for the entire section */
+    width: 1200px;   /* Full width */
+ 
+  margin-right: 180px;
+    background-image: url('../hotel-images/hotelfont.jpg'); /* Background image */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: rgb(6, 6, 6);
+
+}
+
+.show-Deluxe-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 822px;
+height: 350px; /* Height for the container */
+width: 30%;    /* Width of the container */
+max-width: 800px; /* Maximum width */
+margin-top: 100px;
+background-color: #f4ba69;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.Deluxe-information {
+text-align: center; /* Center-align text */
+background-color: #f4ba69;
+
+height: 300px; /* Height for the container */
+width: 900px;    /* Width of the container */
+
+}
+.Deluxe-information h5{
+color: blue;
+margin-top: 20px;
+margin-bottom: 10px;
+font-size: 2em;
+}
+
+/* Button Style */
+.view-more-button {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 15px;
+background-color: #ff6347; /* Button color */
+color: white;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+background-color: #33eaea; /* Darker shade on hover */
+}
+/* Styles for Icon Row */
+.icon-rows {
+    display: flex;
+    justify-content: space-between; /* Space out icons evenly */
+    background-color: #2bac9d; /* Light background for the icon row */
+   width: 1100px;
+    padding: 20px;
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 1px;
+   
+}
+
+.icon-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space evenly */
+    margin-top: 2px; /* Space above the icon row */
+}
+
+.icons {
+    text-align: center; /* Center the icon and text */
+    margin: 15px; /* Space around each icon */
+    flex: 1 0 30%; /* Allow flexibility in width */
+    max-width: 120px; /* Set a maximum width */
+}
+
+.icon-images {
+    width: 100px; /* Width of the icons */
+    height: 70px; /* Height of the icons */
+}

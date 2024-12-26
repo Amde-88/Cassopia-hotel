@@ -1,0 +1,29 @@
+.availability-checker {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.availability-checker h2 {
+    margin-bottom: 20px;
+}
+
+.availability-checker label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.availability-checker select,
+.availability-checker button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit width */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

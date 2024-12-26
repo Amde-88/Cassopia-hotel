@@ -1,0 +1,59 @@
+/* Feedback.css */
+
+.feedback {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the feedback form on the page */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ccc; /* Subtle border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.feedback h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.feedback form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.feedback textarea {
+    width: 100%; /* Full width */
+    height: 150px; /* Height for the textarea */
+    border: 1px solid #ccc; /* Border for the textarea */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Inner padding for comfort */
+    font-size: 16px; /* Font size for readability */
+    margin-bottom: 20px; /* Space below the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.feedback textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for focus effect */
+}
+
+.feedback button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.feedback button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.feedback button:disabled {
+    background-color: #ccc; /* Grey background for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor */
+}

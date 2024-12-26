@@ -1,0 +1,306 @@
+
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1250px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.hotel-detail-container {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url('../hotel-images/pool-hotel.avif');
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.hotel-info {
+    max-width: 350px;
+    margin-right: 777px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 155px;
+    overflow: auto;
+}
+
+.additional-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url('../hotel-images/cassopia-hotel.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.additional-image-info {
+    width: 400px;
+    height: 350px;
+    margin-left: 660px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.sightseeing-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Make images appear in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-bottom: 10px;
+}
+
+.image-card {
+    position: relative;
+    width: 300px; /* Width for each image card */
+    height: 200px; /* Height for each image card */
+    margin: 10px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+}
+.navigation-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #007BFF;
+    margin: 0 10px; /* Space between buttons and image */
+    transition: color 0.3s;
+}
+
+.navigation-button:hover {
+    color: #0056b3;
+}
+.read-more-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Map Section */
+.abc{
+   
+    color: #0a305a;
+    padding-top: 40px;
+    font-size: 5.4em;
+}
+.map-container {
+    display: flex;
+    background-color: rgb(194, 191, 191);
+    padding: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0px;
+}
+
+.map-section {
+    width: 703px; /* Set width for the map */
+    height: 450px; /* Set height for the map */
+}
+
+.hotel-info-box {
+    width: 444px;
+    height: 500px; /* Match height of the map */
+    
+    background: rgba(151, 151, 10, 0.7); /* Background for info box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+.hotel-info-box h3 {
+  
+  text-align: center;
+  margin-top: 40px;
+ font-size: 1.7em;
+    color: #ffffff; /* White text for contrast */
+}
+
+.hotel-info-box ul {
+   
+    list-style-type: disc; /* Bulleted list */
+    font-size: 1.4em;
+    padding-left: 60px;
+    
+    padding-top: 20px;
+}
+
+.hotel-info-box ul li {
+    margin: 10px 0;
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sightseeing-title {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+    
+    .attraction-card {
+        min-width: 80%; /* Adjust card width on smaller screens */
+        margin: 5px; /* Reduce margin for smaller screens */
+    }
+}
+
+.view-details-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+.h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.leaflet-container {
+    height: 100%; /* Set height for the map */
+    width: 100%;   /* Set width for the map */
+    border-radius: 10px; /* Rounded corners for the map */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.subscribe-section {
+    width: 100%;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.subscribe-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subscribe-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-left: 250px;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+   
+}
+
+.subscribe-input {
+    padding: 10px;
+    margin-bottom: 10px;
+   
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Full width */
+}
+
+.subscribe-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+   
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 182px;
+    width: 200px; /* Full width */
+}
+
+.subscribe-button:hover {
+    background-color: #0056b3;
+}
+
+.sub{
+    width: 1200px;
+    height: 100px;
+    margin-top: 777px;
+}

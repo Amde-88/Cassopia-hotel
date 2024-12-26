@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: #4f9e8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.main-title,
+.form-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.info-box i {
+    font-size: 2em;
+    color: #4f9e8a;
+}
+
+.required {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.send-button {
+    padding: 10px;
+    background: #4f9e8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

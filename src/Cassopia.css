@@ -1,0 +1,437 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(247, 248, 247); /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+}
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 10px; /* Padding for the header */
+  background-color: #ffffff; /* White background for the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+  height: 70px; /* Set logo height */
+  width: 70px; /* Set logo width */
+  border-radius: 50%; /* Circular logo */
+  margin-right: 20px; /* Space between logo and title */
+}
+
+.header-title {
+  flex: 1; /* Allow title to take available space */
+  display: flex;
+  flex-direction: column; /* Stack h1 and h2 */
+  align-items: flex-start; /* Align to start */
+}
+
+.header h1 {
+  color: rgb(227, 41, 72);
+  font-size: 2.7em;
+  font-size: 24px; /* Adjusted font size */
+}
+
+.header h2 {
+  font-size: 1.2em; /* Adjusted font size */
+  margin-top: 5px; /* Space between titles */
+}
+.clocks-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+ 
+}
+
+.clock {
+  text-align: center;
+  font-size: 1em;
+  background-color: white;
+  color: black;
+  width: 250px;
+  height: 100px;
+}
+/* Contact Info Styling */
+.contact-info {
+  display: block;
+  text-align: right; /* Align text to the right */
+  font-size: 14px; /* Font size for contact information */
+  margin-right: 44px;
+  margin-left: 20px;
+}
+
+
+.contact-info a {
+  color: #0778f1; /* Bootstrap primary color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #143252; /* Navigation background color */
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc; /* Border for the input */
+  border-radius: 5px; /* Rounded corners */
+  margin-left: 10px; /* Space between link and input */
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+/* Main content styles */
+.home {
+  position: relative;
+}
+
+.background-image {
+  height: 400px; /* Height for the background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  position: relative; /* Positioning for buttons */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background for buttons */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%; /* Circular buttons */
+}
+
+.prev {
+  left: 10px; /* Position left */
+}
+
+.next {
+  right: 10px; /* Position right */
+}
+.content {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* Booking Info Styles */
+.booking-form {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  margin-top: 20px; /* Space above form */
+}
+
+.booking-inputs {
+  display: flex;
+  justify-content: space-between; /* Space elements evenly */
+  background-color: white; /* Light background for the input area */
+  padding: 15px; /* Padding for the input area */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Space above input section */
+}
+
+.input-container {
+  flex: 1; /* Equal space for each item */
+  margin: 0 10px; /* Space between input containers */
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px; /* Space below label */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Space between input groups */
+}
+
+.input-group input {
+  padding: 7px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.input-group svg {
+  font-size: 20px; /* Icon size */
+  color: #007bff; /* Icon color */
+}
+
+/* Guest Details Styles */
+.guest-details {
+  display: flex; /* Flex layout for guests */
+  flex-direction: column; /* Stack guest inputs vertically */
+  margin-top: 10px; /* Space above guest details */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: left; /* Center buttons */
+  gap: 2px; /* Space between buttons */
+  margin-left: 30px; /* Space above buttons */
+  margin-bottom: 5px;
+}
+
+/* Booking Button */
+.booking-button {
+  margin-top: 10px; /* Space above button */
+  padding: 10px 36px; /* Increased size for button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.booking-button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+/* Check Availability Button */
+.check-availability-button {
+  margin-top: 10px; /* Space above button */
+  padding: 10px 35px; /* Increased size for button */
+  background-color: #28a745; /* Green color for availability */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.check-availability-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Booking Summary Styles */
+.booking-summary {
+  margin-top: 10px; /* Space above summary */
+  padding: 15px;
+  text-size-adjust: 16px;
+  border: 2px solid #ccc; /* Border for summary */
+  border-radius: 5px; /* Rounded corners */
+  background-color:white; /* Light background for contrast */
+  align-items: center;
+ 
+}
+.hotel-details {
+  padding: 20px;
+}
+
+.hotel-detail-container {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.hotel-image {
+  flex: 1; /* Allow the image to take up one part of the flex container */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.hotel-image img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.hotel-info {
+  flex: 1; /* Allow the text to take up one part of the flex container */
+  margin-bottom: 50px;
+}
+
+
+/* Add this CSS for clocks */
+.clocks-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 0;
+}
+
+.clock {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 150px; /* Adjusts size based on flexbox */
+}
+
+.clock h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.clock p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  height: 390px;
+  margin-top: 2330px;
+  justify-content: space-between;
+  background-color: #1a1a1a; /* Dark gray background */
+  color: white;
+  padding: 10px; /* Increased padding for more height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.footer-column {
+  flex: 1; /* Equal width for all columns */
+  
+  margin: 10px; /* Spacing between columns */
+  min-width: 150px; /* Minimum width for responsiveness */
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #f8c32d; /* Gold accent line under headings */
+  padding-bottom: 5px; /* Space between text and border */
+}
+
+.footer-column p, .footer-column a {
+  color: #f8c32d; /* Light gold color for text */
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.footer-column .icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  margin: 10px;
+  justify-content: space-between;
+}
+.social-links {
+  display: flex; /* Ensure the links are in a row */
+  gap: 15px; /* Adjust the space between icons as needed */
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.footer-column p {
+  font-size: 14px; /* Font size for paragraph text */
+}
+
+@media (max-width: 600px) {
+  .footer {
+      flex-direction: column; /* Stack columns in a single column layout */
+      align-items: flex-start; /* Align items to the start on mobile */
+  }
+  .footer-column {
+      margin: 0; /* Remove margin for mobile layout */
+      width: 100%; /* Allow full width for each column */
+  }
+}
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #b1b0b0;
+  margin-top: 20px;
+  background-color: #fcf6f6; /* Dark background for footer */
+  color: rgb(10, 10, 10);
+  border: 30%;
+}
+
+.footer-bottom p {
+  margin-left:  10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+.social-links {
+  font-size: 0.7em;
+}
+.social-links a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 0px;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+  color: greenyellow; /* Change color on hover */
+}
+
+.social-links a > svg {
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+}
+
+/* src/Cassopia.css */
