@@ -1,5 +1,5 @@
 // src/Clock.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 const Clock = ({ timeZone, city }) => {
   const [time, setTime] = useState('');
