@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Accomodation from './components/Accomodation';
-import Rooms from './components/Rooms';
+import Room from './components/Rooms';
 import Amenities from './components/Amenities'
-import Boo from './components/Book';
+import Book from './components/Book';
 import Clock from './Clock'; // Import the Clock component
 import Contact from './components/Contact';
 import Feedback from './components/Feedback';
