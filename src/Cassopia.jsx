@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Accomodation from './components/Accomodation';
 import Rooms from './components/Rooms';
-import Amenities from './components/Amenities'
+import Features from './components/Features'
 import Book from './components/Book';
 import Clock from './Clock'; // Import the Clock component
 import Contact from './components/Contact';
@@ -77,7 +77,7 @@ const Cassopia = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/accomodation">Accomodation</Link></li>
                     <li><Link to="/rooms">Rooms</Link></li>
-                    <li><Link to="/amenities">Amenities</Link></li>
+                    <li><Link to="/features">Features</Link></li>
                     <li><Link to="/book">Book</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/feedback">Feedback</Link></li>
@@ -102,7 +102,7 @@ const Cassopia = () => {
                 <Route path="/" element={<Home navigate={navigate} />} />
                 <Route path="/accomodation" element={<Accomodation />} />
                 <Route path="/rooms" element={<Rooms />} />
-                <Route path="/amenities" element={<Amenities />} />
+                <Route path="/features" element={<Features />} />
                 <Route path="/book" element={<Book />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/feedback" element={<Feedback />} />

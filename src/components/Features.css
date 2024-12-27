@@ -1,0 +1,457 @@
+/* src/components/Features.css */
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .feature-section {
+    display: flex;
+    width: 1300px;
+    margin-bottom: 40px; /* Space between sections */
+  }
+  
+  .feature-image {
+    width: 1300px; /* Set the width */
+    height: 400px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+ 
+  .feature-description h2 {
+  font-size: 2.3em;
+   margin-left: 400px;
+  }
+  .feature-description p {
+  font-size: 1.2em;
+  width: 1200px;
+  }
+  
+  .conference-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .conference-image {
+    width: 800px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  
+  .conference-details {
+    width: 350px; /* Set the width */
+    height: 450px; /* Set the height */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ef8a31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+/* src/components/Features.css */
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .feature-section {
+    display: flex;
+    width: 1300px;
+    margin-bottom: 40px; /* Space between sections */
+  }
+  
+  .feature-image {
+    width: 1300px; /* Set the width */
+    height: 400px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+ 
+  .feature-description h2 {
+  font-size: 2.3em;
+   margin-left: 400px;
+  }
+  .feature-description p {
+  font-size: 1.2em;
+  width: 1200px;
+  }
+  
+  .conference-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .conference-image {
+    width: 800px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  
+  .conference-details {
+    width: 350px; /* Set the width */
+    height: 450px; /* Set the height */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ef8a31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+/* src/components/Features.css */
+.african-hub {
+    background-image: url('../hotel-images/hotel-hub.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    width: 800px; /* Set the width */
+    height: 400px; /* Set the height */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Space above the section */
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .african-hub-container {
+    width: 400px; /* Set the width of the container */
+    height: 400px; /* Set the height of the container */
+ 
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .book-table-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .book-table-button:hover {
+    background-color: #0056b3;
+  }
+  .hub-hotel-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Space above the section */
+  }
+  
+  .hub-hotel-container {
+    width: 350px; /* Set the width */
+    height: 450px; /* Set the height */
+    padding: 20px;
+    margin-top: 70px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between container and image */
+  }
+  
+  .hub-hotel-image {
+    width: 850px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .book-table-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .book-table-button:hover {
+    background-color: #0056b3;
+  }
+  .cultural-restaurant-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Space above the section */
+  }
+  
+  .cultural-restaurant-container {
+    width: 350px; /* Set the width of the container */
+    height: 450px; /* Set the height of the container */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between container and image */
+  }
+  
+  .cultural-restaurant-image {
+    width: 850px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  
+  /* Additional styles for buttons */
+  .book-table-button,
+  .see-menu-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  .book-table-button:hover,
+  .see-menu-button:hover {
+    background-color: #0056b3;
+  }
+  .cassopia-lounge-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Space above the section */
+  }
+  
+  .cassopia-lounge-container {
+    width: 350px; /* Set the width of the container */
+    height: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between container and image */
+  }
+  
+  .cassopia-lounge-image {
+    width: 850px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  /* Additional styles for buttons */
+  .book-table-button,
+  .see-menu-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  .book-table-button:hover,
+  .see-menu-button:hover {
+    background-color: #0056b3;
+  }
+
+  .cassop-spa-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Space above the section */
+  }
+  
+  .cassop-spa-container {
+    width: 350px; /* Set the width of the container */
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between container and image */
+  }
+  
+  .cassop-spa-image {
+    width: 850px; /* Set the width */
+    height: 600px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+  .footer {
+    display: flex;
+    height: 410px;
+    margin-top: 2330px;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: white;
+    padding: 10px; /* Increased padding for more height */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+  
+  .footer-column {
+    flex: 1; /* Equal width for all columns */
+    
+    margin: 10px; /* Spacing between columns */
+    min-width: 150px; /* Minimum width for responsiveness */
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f8c32d; /* Gold accent line under headings */
+    padding-bottom: 5px; /* Space between text and border */
+  }
+  
+  .footer-column p, .footer-column a {
+    color: #f8c32d; /* Light gold color for text */
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  .footer-column .icon {
+    margin-right: 10px; /* Spacing between icon and text */
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .social-links {
+    display: flex; /* Ensure the links are in a row */
+    gap: 15px; /* Adjust the space between icons as needed */
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex; /* Center the icon */
+    align-items: center; /* Center vertically */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .footer-column p {
+    font-size: 14px; /* Font size for paragraph text */
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+        flex-direction: column; /* Stack columns in a single column layout */
+        align-items: flex-start; /* Align items to the start on mobile */
+    }
+    .footer-column {
+        margin: 0; /* Remove margin for mobile layout */
+        width: 100%; /* Allow full width for each column */
+    }
+  }

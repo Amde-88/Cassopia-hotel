@@ -328,7 +328,7 @@ nav ul li a:hover {
 
 .footer {
   display: flex;
-  height: 390px;
+  height: 410px;
   margin-top: 2330px;
   justify-content: space-between;
   background-color: #1a1a1a; /* Dark gray background */
@@ -402,6 +402,7 @@ nav ul li a:hover {
   padding: 15px 20px;
   border-top: 1px solid #b1b0b0;
   margin-top: 20px;
+
   background-color: #fcf6f6; /* Dark background for footer */
   color: rgb(10, 10, 10);
   border: 30%;
