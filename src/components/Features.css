@@ -18,6 +18,9 @@
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 10px; /* Optional: add rounded corners */
   }
+  .feature-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
  
   .feature-description h2 {
   font-size: 2.3em;
@@ -38,8 +41,12 @@
     width: 800px; /* Set the width */
     height: 600px; /* Set the height */
     object-fit: cover; /* Ensure the image covers the area */
+    margin: 20px;
     border-radius: 10px; /* Optional: add rounded corners */
   }
+.conference-image:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
   
   .conference-details {
     width: 350px; /* Set the width */
@@ -249,10 +256,13 @@
   }
   
   .hub-hotel-image {
-    width: 850px; /* Set the width */
+    width: 800px; /* Set the width */
     height: 600px; /* Set the height */
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 10px; /* Optional: add rounded corners */
+  }
+  .hub-hotel-image:hover {
+    transform: scale(1.1); /* Scale effect on hover */
   }
   
   h2 {
@@ -300,12 +310,15 @@
   }
   
   .cultural-restaurant-image {
-    width: 850px; /* Set the width */
+    width: 800px; /* Set the width */
     height: 600px; /* Set the height */
+    margin: 10px;
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 10px; /* Optional: add rounded corners */
   }
-  
+  .cultural-restaurant-image:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
   /* Additional styles for buttons */
   .book-table-button,
   .see-menu-button {
@@ -332,7 +345,7 @@
   .cassopia-lounge-container {
     width: 350px; /* Set the width of the container */
     height: 400px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -343,8 +356,12 @@
   .cassopia-lounge-image {
     width: 850px; /* Set the width */
     height: 600px; /* Set the height */
+    margin: 10px;
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 10px; /* Optional: add rounded corners */
+  }
+  .cassopia-lounge-image:hover {
+    transform: scale(1.1); /* Scale effect on hover */
   }
   /* Additional styles for buttons */
   .book-table-button,
@@ -384,13 +401,17 @@
   .cassop-spa-image {
     width: 850px; /* Set the width */
     height: 600px; /* Set the height */
+    margin: 10px;
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 10px; /* Optional: add rounded corners */
   }
-  .footer {
+  .cassop-spa-image:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+  .foot {
     display: flex;
     height: 410px;
-    margin-top: 2330px;
+    margin-top: 50px;
     justify-content: space-between;
     background-color: #1a1a1a; /* Dark gray background */
     color: white;
@@ -431,14 +452,14 @@
   }
   
   .social-links a {
-    color: white;
+    color: rgb(39, 25, 241);
     text-decoration: none;
     display: flex; /* Center the icon */
     align-items: center; /* Center vertically */
   }
   
   .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #1aead5; /* Change color on hover */
   }
   
   .footer-column p {

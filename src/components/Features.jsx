@@ -1,10 +1,11 @@
 // src/components/Features.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './Features.css'; // Import the CSS file
 import feature from '../hotel-images/hote-feature.avif';
 import conferenceImage from '../hotel-images/conference.jpg'; // New conference image
 import hubImage from '../hotel-images/hubhotel.webp'; // Hub hotel image
-import cultureImage from '../hotel-images/cult.jpg';
+import cultureImage from '../hotel-images/dining.avif';
 import loungeImage from '../hotel-images/lounge.webp';
 import spaImage from '../hotel-images/spa.avif';
 
@@ -13,12 +14,15 @@ import { faEnvelope, faPhone, faQuestionCircle, faUsers as faUsersSolid, faNewsp
 import { faLinkedin, faGithub, faInstagram, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 const Features = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  // Update handleBookTable to navigate to Book.jsx
   const handleBookTable = () => {
-    alert("Table booked successfully!");
+    navigate('/book'); // Navigate to the Book page
   };
 
   const handleSeeMenu = () => {
-    alert("Menu displayed!");
+    navigate('/rooms'); 
   };
 
   return (
@@ -29,15 +33,18 @@ const Features = () => {
           alt="Feature" 
           className="feature-image" 
         />
-             </div>
-        <div className="feature-description">
-           <h2>Restaurants And Bars</h2>
-          <p>17 food and beverage outlets for a choice of dining experiences ranging from all-day dining,
-             places to have tea and coffee while catching up with friends, spots for sips or hand-crafted cocktails 
-            before or after dinner with a panoramic view of the airport, and the city, also bars to music lovers.</p>
-        </div>
- {/* Conference Room Section */}
- <div className="conference-section">
+      </div>
+      <div className="feature-description">
+        <h2>Restaurants And Bars</h2>
+        <p>
+          17 food and beverage outlets for a choice of dining experiences ranging from all-day dining,
+          places to have tea and coffee while catching up with friends, spots for sips or hand-crafted cocktails 
+          before or after dinner with a panoramic view of the airport, and the city, also bars for music lovers.
+        </p>
+      </div>
+
+      {/* Conference Room Section */}
+      <div className="conference-section">
         <img 
           src={conferenceImage} 
           alt="Conference Room" 
@@ -54,8 +61,8 @@ const Features = () => {
           <p>Monday to Friday: 9 AM - 5 PM</p>
           <p>Saturday: 10 AM - 4 PM</p>
           <div className="buttons">
-            <button onClick={handleBookTable}>Book A Table</button>
-            <button onClick={handleSeeMenu}>See Menu</button>
+            <button className="book-table-button" onClick={handleBookTable}>Book A Table</button>
+            <button className="see-menu-button" onClick={handleSeeMenu}>See Menu</button>
           </div>
         </div>
       </div>
@@ -63,7 +70,7 @@ const Features = () => {
       {/* Hub Hotel Section */}
       <div className="hub-hotel-section">
         <div className="hub-hotel-container">
-          <h2>TheAfrican Hub </h2>
+          <h2>The African Hub</h2>
           <p>
             Welcome to Hub Hotel, where comfort meets elegance. Our hotel 
             offers a unique blend of luxury and convenience, providing the 
@@ -83,17 +90,15 @@ const Features = () => {
           className="hub-hotel-image" 
         />
       </div>
-   
 
       {/* Ethiopian Cultural Restaurant Section */}
       <div className="cultural-restaurant-section">
-      <img 
+        <img 
           src={cultureImage} 
           alt="Ethiopian Cultural Restaurant" 
           className="cultural-restaurant-image" 
         />
         <div className="cultural-restaurant-container">
-       
           <h2>Ethiopian Cultural Restaurant</h2>
           <p>
             Experience the rich flavors and traditions of Ethiopian culture 
@@ -102,41 +107,36 @@ const Features = () => {
             the heritage of Ethiopia.
           </p>
           <h3>Opening Times</h3>
-          <p> 11 AM - 11 PM</p>
-         
+          <p>11 AM - 11 PM</p>
           <button className="book-table-button" onClick={handleBookTable}>Book A Table</button>
           <button className="see-menu-button" onClick={handleSeeMenu}>See Menu</button>
         </div>
-      
       </div>
-    ]
 
- {/* Cassopia Lounge Section */}
- <div className="cassopia-lounge-section">
- <div className="cassopia-lounge-container">
-   <h2>Cassopia Lounge</h2>
-   <p>
-     Relax and unwind in the Cassopia Lounge, a perfect spot for casual gatherings or quiet moments. 
-     Enjoy a selection of premium beverages and light snacks in a cozy atmosphere that complements your stay. 
-     Whether you're meeting friends or enjoying some alone time, the Cassopia Lounge offers a welcoming environment.
-   </p>
-   <h3>Opening Times</h3>
-          <p> 02 AM - 04 PM</p>
-         
+      {/* Cassopia Lounge Section */}
+      <div className="cassopia-lounge-section">
+        <div className="cassopia-lounge-container">
+          <h2>Cassopia Lounge</h2>
+          <p>
+            Relax and unwind in the Cassopia Lounge, a perfect spot for casual gatherings or quiet moments. 
+            Enjoy a selection of premium beverages and light snacks in a cozy atmosphere that complements your stay. 
+            Whether you're meeting friends or enjoying some alone time, the Cassopia Lounge offers a welcoming environment.
+          </p>
+          <h3>Opening Times</h3>
+          <p>02 AM - 04 PM</p>
           <button className="book-table-button" onClick={handleBookTable}>Book A Table</button>
           <button className="see-menu-button" onClick={handleSeeMenu}>See Menu</button>
- </div>
- <img 
-   src={loungeImage} 
-   alt="Cassopia Lounge" 
-   className="cassopia-lounge-image" 
- />
-</div>
-
+        </div>
+        <img 
+          src={loungeImage} 
+          alt="Cassopia Lounge" 
+          className="cassopia-lounge-image" 
+        />
+      </div>
 
       {/* Cassop SPA Section */}
       <div className="cassop-spa-section">
-      <img 
+        <img 
           src={spaImage} 
           alt="Cassop SPA" 
           className="cassop-spa-image" 
@@ -151,15 +151,12 @@ const Features = () => {
           <h3>Opening Times</h3>
           <p>Morning: 05 PM - 10 AM</p>
           <p>Afternoon: 04 AM - 08 PM</p>
-
           <button className="book-table-button" onClick={handleBookTable}>Book A Treatment</button>
         </div>
-       
       </div>
-    </div>
 
       {/* Footer Section */}
-      <footer className="footer">
+      <footer className="foot">
         <div className="footer-column">
           <h3>BOOK ONLINE</h3>
           <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:amdecassopia@gmail.com">amdecassopia@gmail.com</a></p>
@@ -182,7 +179,7 @@ const Features = () => {
         </div>
         <div className="footer-column">
           <h3>SOCIAL MEDIA</h3>
-          <p>Contact with us on social media:</p>
+          <p>Contact us on social media:</p>
           <div className="social-links">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
@@ -203,7 +200,7 @@ const Features = () => {
         </div>
         {/* Footer Bottom Section */}
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Cassopia Hotel. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Cassopia Hotel. All rights reserved.</p>
           <div className="social-links">
             <h2>Follow Us on Social Media:</h2>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -227,6 +224,5 @@ const Features = () => {
     </div>
   );
 };
-
 
 export default Features;

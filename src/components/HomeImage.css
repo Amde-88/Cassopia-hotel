@@ -69,17 +69,31 @@
 .hotel-info h2 {
     color: #007bff;
 }
+.hotel-info p {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .additional-image-info h2{
     color: #007BFF;
 }
 .sightseeing-container {
     text-align: center;
+   
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
+.sight{
+    font-size: 1.8em;
+    color: #150a79;
+}
+.sight:hover {
+    font-size: 3.8em; /* Base size */
+   
+    transition: font-size 0.5s ease; /* Smooth transition */
+    color: #2e20ef; /* Default text color */
+  }
 
 .images-row {
     display: flex;
@@ -165,11 +179,23 @@
 }
 
 h2 {
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
 /* Map Section */
+.mapp {
+        font-size: 1.8em; /* Base size */
+       
+        transition: font-size 0.5s ease; /* Smooth transition */
+        color:  #150a79; /* Default text color */
+      }
+.mapp:hover {
+        font-size: 3.8em; /* Base size */
+       
+        transition: font-size 0.5s ease; /* Smooth transition */
+        color: #2e20ef; /* Default text color */
+      }
 .abc{
    
     color: #0a305a;
@@ -183,11 +209,12 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 0px;
+    
 }
 
 .map-section {
-    width: 703px; /* Set width for the map */
-    height: 450px; /* Set height for the map */
+    width: 723px; /* Set width for the map */
+    height: 530px; /* Set height for the map */
 }
 
 .hotel-info-box {
@@ -253,7 +280,7 @@ h2 {
 .h2 {
     text-align: center;
     margin: 20px 0;
-    color: #333;
+    color: #1a3deb;
 }
 
 .leaflet-container {
@@ -276,6 +303,7 @@ h2 {
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
+    color:greenyellow;
 }
 
 .subscribe-description {

@@ -1,0 +1,192 @@
+.rooms-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.rooms-title {
+  font-size: 3.1em;
+
+  margin-bottom: 10px;
+  margin-left: 50px;
+  text-align: start;
+  color: #320886;
+}
+.rooms-title:hover {
+  font-size: 1.8em; /* Base size */
+ 
+  transition: font-size 0.5s ease; /* Smooth transition */
+  color: #333; /* Default text color */
+}
+
+.rooms-list {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center; /* Center align */
+}
+
+.room-card {
+  margin: 15px;
+  width: 1000px; /* Set width for the card */
+}
+
+.room-image-container {
+  display: block;
+  justify-content: center; /* Center the image */
+}
+
+.room-image {
+  width: 1200px; /* Image width */
+  height: 900px; /* Image height */
+}
+.room-image:hover {
+  transform: scale(1.07); /* Scale effect on hover */
+}
+.room-details {
+  display: block;
+  justify-content: center; /* Center details */
+}
+.room-details:hover {
+
+  transform: scale(1.09); /* Scale effect on hover */
+} 
+.room-details-container {
+  width: 430px; /* Width for room details */
+  height: 270px; /* Height for room details */
+  margin-left: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+}
+
+.room-title {
+  font-size: 2.6em;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.room-title:hover {
+  font-size: 1.8em; /* Base size */
+ 
+  transition: font-size 0.5s ease; /* Smooth transition */
+  color: #210493; /* Default text color */
+}
+
+
+.room-description {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.room-functional,
+.room-opening-time,
+.room-ending-time,
+.room-rate {
+  font-size: 0.9em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.book-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px; /* Add space above button */
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .rooms-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .room-card {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .room-details-container {
+      width: 90%; /* Adjust details container width for smaller screens */
+  }
+}
+.foot {
+  display: flex;
+  height: 410px;
+  margin-top: 50px;
+  justify-content: space-between;
+  background-color: #1a1a1a; /* Dark gray background */
+  color: white;
+  padding: 10px; /* Increased padding for more height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.footer-column {
+  flex: 1; /* Equal width for all columns */
+  
+  margin: 10px; /* Spacing between columns */
+  min-width: 150px; /* Minimum width for responsiveness */
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #f8c32d; /* Gold accent line under headings */
+  padding-bottom: 5px; /* Space between text and border */
+}
+
+.footer-column p, .footer-column a {
+  color: #f8c32d; /* Light gold color for text */
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.footer-column .icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  margin: 10px;
+  justify-content: space-between;
+}
+.social-links {
+  display: flex; /* Ensure the links are in a row */
+  gap: 15px; /* Adjust the space between icons as needed */
+}
+
+.social-links a {
+  color: rgb(39, 25, 241);
+  text-decoration: none;
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+}
+
+.social-links a:hover {
+  color: #1aead5; /* Change color on hover */
+}
+
+.footer-column p {
+  font-size: 14px; /* Font size for paragraph text */
+}
+
+@media (max-width: 600px) {
+  .footer {
+      flex-direction: column; /* Stack columns in a single column layout */
+      align-items: flex-start; /* Align items to the start on mobile */
+  }
+  .footer-column {
+      margin: 0; /* Remove margin for mobile layout */
+      width: 100%; /* Allow full width for each column */
+  }
+}

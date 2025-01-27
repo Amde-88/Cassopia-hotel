@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     background-color: white;
    
 }
 
+
 .image-container {
-    width: 100%;
-    max-width: 1500px; /* Adjust max width as necessary */
+    width: 1260px;
+    height: 600px;
+    margin-top: 7px;
 }
 
 .standard-room-image {
@@ -21,19 +23,25 @@
 .description-container {
     text-align: center;
     padding: 20px;
-
+    margin-top: 82px;
+    
 }
 .description-container h3{
-    font-size: 2.5em;
-    color: blue;
+    font-size: 3.8em;
+    color: rgb(15, 7, 184);
     font-weight: bold;
 }
+.description-container h3:hover {
+    font-size: 2.8em; /* Base size */
+    transition: font-size 0.4s ease; /* Smooth transition */
+    color: #603afc; /* Default text color */
+  }
 .description-container h4{
-    font-size: 1.4em;
+    font-size: 1.2em;
     align-items: center;
 line-height: 1.5;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
    
     color: rgb(7, 7, 7);
 }
@@ -44,9 +52,9 @@ line-height: 1.5;
     align-items: center;
     height: 600px; /* Height for the entire section */
     width: 1000px;   /* Full width */
- 
+    border-radius: 20px;
   margin-right: 180px;
-    background-image: url('../hotel-images/cassopia-hotel.jpeg'); /* Background image */
+    background-image: url('../hotel-images/standard.avif'); /* Background image */
     background-size: cover;  /* Cover the entire area */
     background-position: center; /* Center the background image */
     color: rgb(6, 6, 6);
@@ -56,11 +64,11 @@ line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 826px;
-    height: 350px; /* Height for the container */
+    margin-left: 1116px;
+    height: 370px; /* Height for the container */
     width: 30%;    /* Width of the container */
     max-width: 800px; /* Maximum width */
-   margin-top: 100px;
+   margin-top: 0px;
     background-color: #f4ba69;
     border-radius: 10px;
     padding: 20px;
@@ -98,25 +106,6 @@ line-height: 1.5;
     background-color: #33eaea; /* Darker shade on hover */
 }
 
-.accommodation-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.image-container {
-    text-align: center;
-}
-
-.standard-room-image {
-    width: 100%; /* Responsive image */
-    height: auto;
-}
-
-.description-container {
-    padding: 20px;
-}
 
 .show-detail {
     margin-top: 20px;
@@ -141,11 +130,11 @@ line-height: 1.5;
     display: flex;
     justify-content: space-between; /* Space out icons evenly */
     background-color: #865d05; /* Light background for the icon row */
-   width: 1100px;
-    padding: 20px;
+   width: 1210px;
+    padding: 10px;
 
     border-radius: 30px; /* Rounded corners */
-    margin-top: 0px;
+    margin-top: 4px;
    
 }
 
@@ -175,12 +164,12 @@ line-height: 1.5;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 180px;
+        margin-right: 80px;
         height: 500px; /* Height for the entire section */
-        width: 1100px;   /* Full width */
-     
-      margin-right: 180px;
-        background-image: url('../hotel-images/hote-latest.avif'); /* Background image */
+        width: 1000px;   /* Full width */
+        border-radius: 20px;
+      margin-left: 270px;
+        background-image: url('../hotel-images/prime.avif'); /* Background image */
         background-size: cover;  /* Cover the entire area */
         background-position: center; /* Center the background image */
         color: rgb(6, 6, 6);
@@ -191,11 +180,11 @@ line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 822px;
+    margin-right: 1090px;
     height: 350px; /* Height for the container */
     width: 30%;    /* Width of the container */
     max-width: 800px; /* Maximum width */
-   margin-top: 100px;
+   margin-top: 30px;
     background-color: #f4ba69;
     border-radius: 10px;
     padding: 20px;
@@ -206,7 +195,7 @@ line-height: 1.5;
     text-align: center; /* Center-align text */
   background-color: #f4ba69;
   
-  height: 300px; /* Height for the container */
+  height: 350px; /* Height for the container */
   width: 900px;    /* Width of the container */
  
 }
@@ -232,18 +221,30 @@ line-height: 1.5;
 .view-more-button:hover {
     background-color: #33eaea; /* Darker shade on hover */
 }
+.icon-roww {
+    display: flex;
+    justify-content: space-between; /* Space out icons evenly */
+    background-color: #0b87ca; /* Light background for the icon row */
+   width: 1210px;
+    padding: 10px;
+
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 4px;
+   
+}
 
 .show-Deluxe {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 180px;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 500px; /* Height for the entire section */
     width: 1200px;   /* Full width */
+    border-radius: 10px;
  
   margin-right: 180px;
-    background-image: url('../hotel-images/hotelfont.jpg'); /* Background image */
+    background-image: url('../hotel-images/delux.avif'); /* Background image */
     background-size: cover;  /* Cover the entire area */
     background-position: center; /* Center the background image */
     color: rgb(6, 6, 6);
@@ -252,13 +253,10 @@ line-height: 1.5;
 
 .show-Deluxe-container {
 display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 822px;
-height: 350px; /* Height for the container */
-width: 30%;    /* Width of the container */
-max-width: 800px; /* Maximum width */
-margin-top: 100px;
+margin-left: 477px;
+height: 360px; /* Height for the container */
+width: 300px;    /* Width of the container */
+margin-top: 10px;
 background-color: #f4ba69;
 border-radius: 10px;
 padding: 20px;
@@ -299,11 +297,11 @@ background-color: #33eaea; /* Darker shade on hover */
 .icon-rows {
     display: flex;
     justify-content: space-between; /* Space out icons evenly */
-    background-color: #2bac9d; /* Light background for the icon row */
-   width: 1100px;
+    background-color: #0b87ca; /* Light background for the icon row */
+   width: 1200px;
     padding: 20px;
-    border-radius: 30px; /* Rounded corners */
-    margin-top: 1px;
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 4px;
    
 }
 
@@ -311,17 +309,272 @@ background-color: #33eaea; /* Darker shade on hover */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Space evenly */
-    margin-top: 2px; /* Space above the icon row */
+    margin-top: 5px; /* Space above the icon row */
 }
 
 .icons {
     text-align: center; /* Center the icon and text */
     margin: 15px; /* Space around each icon */
-    flex: 1 0 30%; /* Allow flexibility in width */
-    max-width: 120px; /* Set a maximum width */
+    flex: 1 0 20%; /* Allow flexibility in width */
+    max-width: 50px; /* Set a maximum width */
 }
 
 .icon-images {
-    width: 100px; /* Width of the icons */
-    height: 70px; /* Height of the icons */
+    width: 60px; /* Width of the icons */
+    height: 40px; /* Height of the icons */
 }
+
+
+.show-King {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 20px;
+    height: 500px; /* Height for the entire section */
+    width: 1200px;   /* Full width */
+    border-radius: 10px;
+ 
+  margin-right: 180px;
+    background-image: url('../hotel-images/spa.avif'); /* Background image */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: rgb(6, 6, 6);
+
+}
+
+.show-King-container {
+display: flex;
+margin-left: 7px;
+margin-right: 244px;
+height: 360px; /* Height for the container */
+width: 300px;    /* Width of the container */
+margin-top: 10px;
+background-color: #f4ba69;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.King-information {
+text-align: center; /* Center-align text */
+background-color: #f4ba69;
+
+height: 300px; /* Height for the container */
+width: 900px;    /* Width of the container */
+
+}
+.King-information h5{
+color: blue;
+margin-top: 20px;
+margin-bottom: 10px;
+font-size: 2em;
+}
+
+/* Button Style */
+.view-more-button {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 15px;
+background-color: #ff6347; /* Button color */
+color: white;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+background-color: #33eaea; /* Darker shade on hover */
+}
+/* Styles for Icon Row */
+.icon-rows {
+    display: flex;
+    justify-content: space-between; /* Space out icons evenly */
+    background-color: #0b87ca; /* Light background for the icon row */
+   width: 1200px;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 4px;
+   
+}
+
+.icon-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space evenly */
+    margin-top: 5px; /* Space above the icon row */
+}
+
+.icons {
+    text-align: center; /* Center the icon and text */
+    margin: 15px; /* Space around each icon */
+    flex: 1 0 20%; /* Allow flexibility in width */
+    max-width: 50px; /* Set a maximum width */
+}
+
+.icon-images {
+    width: 60px; /* Width of the icons */
+    height: 40px; /* Height of the icons */
+}
+
+
+.show-Presidential {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 20px;
+    height: 500px; /* Height for the entire section */
+    width: 1200px;   /* Full width */
+    border-radius: 10px;
+ 
+  margin-right: 180px;
+    background-image: url('../hotel-images/standardback.webp'); /* Background image */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: rgb(6, 6, 6);
+
+}
+
+.show-Presidential-container {
+display: flex;
+
+margin-left: 7px;
+margin-right: 932px;
+height: 360px; /* Height for the container */
+width: 300px;    /* Width of the container */
+margin-top: 10px;
+background-color: #f4ba69;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.Presidential-information {
+text-align: start; /* Center-align text */
+background-color: #f4ba69;
+
+height: 300px; /* Height for the container */
+width: 900px;    /* Width of the container */
+
+}
+.Presidential-information h5{
+color: blue;
+margin-top: 20px;
+margin-bottom: 10px;
+font-size: 2em;
+}
+
+/* Button Style */
+.view-more-button {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 15px;
+background-color: #ff6347; /* Button color */
+color: white;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+background-color: #33eaea; /* Darker shade on hover */
+}
+/* Styles for Icon Row */
+.icon-rows {
+    display: flex;
+    justify-content: space-between; /* Space out icons evenly */
+    background-color: #05699f; /* Light background for the icon row */
+   width: 1200px;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 4px;
+   
+}
+
+.icon-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space evenly */
+    margin-top: 5px; /* Space above the icon row */
+}
+
+.icons {
+    text-align: center; /* Center the icon and text */
+    margin: 15px; /* Space around each icon */
+    flex: 1 0 20%; /* Allow flexibility in width */
+    max-width: 50px; /* Set a maximum width */
+}
+
+.icon-images {
+    width: 60px; /* Width of the icons */
+    height: 40px; /* Height of the icons */
+}
+.foot {
+    display: flex;
+    height: 410px;
+    margin-top: 50px;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: white;
+    padding: 10px; /* Increased padding for more height */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+  
+  .footer-column {
+    flex: 1; /* Equal width for all columns */
+    
+    margin: 10px; /* Spacing between columns */
+    min-width: 150px; /* Minimum width for responsiveness */
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f8c32d; /* Gold accent line under headings */
+    padding-bottom: 5px; /* Space between text and border */
+  }
+  
+  .footer-column p, .footer-column a {
+    color: #f8c32d; /* Light gold color for text */
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  .footer-column .icon {
+    margin-right: 10px; /* Spacing between icon and text */
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .social-links {
+    display: flex; /* Ensure the links are in a row */
+    gap: 15px; /* Adjust the space between icons as needed */
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex; /* Center the icon */
+    align-items: center; /* Center vertically */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .footer-column p {
+    font-size: 14px; /* Font size for paragraph text */
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+        flex-direction: column; /* Stack columns in a single column layout */
+        align-items: flex-start; /* Align items to the start on mobile */
+    }
+    .footer-column {
+        margin: 0; /* Remove margin for mobile layout */
+        width: 100%; /* Allow full width for each column */
+    }
+  }

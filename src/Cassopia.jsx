@@ -12,6 +12,7 @@ import Feedback from './components/Feedback';
 import { FaSearch, FaCalendarAlt, FaUsers } from 'react-icons/fa'; // Ensure these are imported
 import './Cassopia.css';
 
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faQuestionCircle, faUsers as faUsersSolid, faNewspaper, faHotel, faTree, faWrench, faHome, faCar } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faInstagram, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
@@ -28,18 +29,26 @@ const Cassopia = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState(null);
     const navigate = useNavigate();
-
     const handleSearch = (event) => {
         event.preventDefault();
-        const availableRooms = ["Single Room", "Double Room", "Suite", "Deluxe Room"];
-        const amenities = ["WiFi", "Pool", "Parking", "Restaurant"];
-        const allItems = [...availableRooms, ...amenities]; // Fixed syntax error
-
+        const availableRooms = ["Gonna To Accommdation Center Well-Come"];
+        const amenities = [];
+        const allItems = [...availableRooms, ...amenities];
+    
         const results = allItems.filter(item =>
             item.toLowerCase().includes(searchTerm.toLowerCase())
         );
-
-        setSearchResults(results.length > 0 ? results : ["No results found."]);
+    
+        if (results.length > 0) {
+            // Navigate to Accommodation if a room is found
+            if (availableRooms.includes(results[0])) {
+                navigate('/accomodation'); // Change navigation based on the search
+            }
+            setSearchResults(results);
+        } else {
+             // Redirect to Google search if term does not match any route
+        window.open(`https://www.google.com/search?q=${encodeURIComponent(searchTerm)}`, '_blank');
+        }
         setSearchTerm('');
     };
 
@@ -80,21 +89,22 @@ const Cassopia = () => {
                     <li><Link to="/features">Features</Link></li>
                     <li><Link to="/book">Book</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/feedback">Feedback</Link></li>
                     <li>
-                        <form onSubmit={handleSearch} className="search-form">
-                            <input
-                                type="text"
-                                placeholder="Search..."
-                                value={searchTerm}
-                                onChange={(e) => setSearchTerm(e.target.value)}
-                                className="search-input"
-                            />
-                            <button type="submit" className="search-button">
-                                <FaSearch />
-                            </button>
-                        </form>
-                    </li>
+    <form onSubmit={handleSearch} className="search-form">
+        <div className="row">
+            <input
+                type="text"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input"
+            />
+            <button onClick={handleSearch} className="search-button">
+                <FontAwesomeIcon icon={faSearch} />
+            </button>
+        </div>
+    </form>
+</li>
                 </ul>
             </nav>
 
@@ -137,7 +147,7 @@ const Home = ({ navigate }) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [arrivingDate, setArrivingDate] = useState('');
     const [departingDate, setDepartingDate] = useState('');
-    const [adults, setAdults] = useState(1);
+    const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
     const [additionalGuests, setAdditionalGuests] = useState(0);
     const [showGuestDetails, setShowGuestDetails] = useState(false);
@@ -172,30 +182,18 @@ const Home = ({ navigate }) => {
                 <h1>WELCOME TO CASSOPIA HOTEL</h1>
                 <p>Your comfort is our priority.</p>
                 <form onSubmit={handleBookingSubmit} className="booking-form">
-                    <div className="input-group booking-inputs">
-                        <div className="input-container">
-                            <label>ARRIVING: <FaCalendarAlt /></label>
-                            <input
-                                type="date"
-                                value={arrivingDate}
-                                onChange={(e) => setArrivingDate(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="input-container">
-                            <label>DEPARTING: <FaCalendarAlt /></label>
-                            <input
-                                type="date"
-                                value={departingDate}
-                                onChange={(e) => setDepartingDate(e.target.value)}
-                                required
-                            />
-                        </div>
+                   
+                <div className='guesting'>
+                                    <h2>
+                                        CLICK TO ADD CASSOPIA-HOTEL ROOM GUESTS...
+                                    </h2>
+                                 </div>
                         <div className="input-container guests">
-                            <label>GUESTS: <FaUsers /></label>
+                         <label>ADD-GUESTS: <FaUsers /></label> 
+                         <button className='guests-button'>
                             <label onClick={() => setShowGuestDetails((prev) => !prev)} style={{ cursor: 'pointer' }}>
-                                Guests: {adults} Adult{adults > 1 ? 's' : ''}, {children} Child{children !== 1 ? 'ren' : ''}, {additionalGuests} Additional Guest{additionalGuests > 1 ? 's' : ''}
-                            </label>
+                                Guests: {adults} Adult{adults > 1 ? 's' : ''}, {children} Child{children !== 1 ? 'ren' : ''}
+                            </label> </button>
                             {showGuestDetails && (
                                 <div className="guest-details">
                                     <div className="input-group">
@@ -216,20 +214,33 @@ const Home = ({ navigate }) => {
                                             onChange={(e) => setChildren(e.target.value)}
                                             min="0"
                                         />
-                                    </div>
-                                    <div className="input-group">
-                                        <label>Additional Guests:</label>
-                                        <input
-                                            type="number"
-                                            value={additionalGuests}
-                                            onChange={(e) => setAdditionalGuests(e.target.value)}
-                                            min="0"
-                                        />
-                                    </div>
+                                        
+                                
+                                    <div className="input-group booking-inputs">
+                                    <div className="input-container">
+                            <label>ARRIVING: <FaCalendarAlt /></label>
+                            <input
+                                type="date"
+                                value={arrivingDate}
+                                onChange={(e) => setArrivingDate(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-container">
+                            <label>DEPARTING: <FaCalendarAlt /></label>
+                            <input
+                                type="date"
+                                value={departingDate}
+                                onChange={(e) => setDepartingDate(e.target.value)}
+                                required
+                            />
+                             </div>
+                        </div>
+                        </div>
                                 </div>
                             )}
                         </div>
-                    </div>
+                   
                     <div className="button-container">
                         <button type="button" className="check-availability-button" onClick={checkAvailability}>
                             Check Availability
@@ -239,10 +250,10 @@ const Home = ({ navigate }) => {
                 </form>
                 <div className="booking-summary">
                     <h2>Booking Summary</h2>
+                    <p><strong>Guests:</strong> {adults} Adult{adults > 1 ? 's' : ''}, {children} Child{children !== 1 ? 'ren' : ''}, {additionalGuests} Additional Guest{additionalGuests > 1 ? 's' : ''}</p>            
                     <p><strong>Arriving:</strong> {arrivingDate}</p>
                     <p><strong>Departing:</strong> {departingDate}</p>
-                    <p><strong>Guests:</strong> {adults} Adult{adults > 1 ? 's' : ''}, {children} Child{children !== 1 ? 'ren' : ''}, {additionalGuests} Additional Guest{additionalGuests > 1 ? 's' : ''}</p>
-                </div>
+                     </div>
             </div>
         </div>
     );

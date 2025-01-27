@@ -90,8 +90,8 @@ const HomeImage = () => {
 
             {/* Sightseeing Component */}
             <Sightseeing />
-
-            <h2 style={{ textAlign: 'center', margin: '20px 0' }}>MAPP</h2>
+   <div classname= "map">
+            <h2 className='mapp'>CASSOPIA-MAP</h2></div>
             <div className="map-container">
                 <div className="map-section">
                     <MapComponent />
@@ -150,7 +150,7 @@ const Sightseeing = () => {
 
     return (
         <div className="sightseeing-container">
-            <h2>Sightseeing Features</h2>
+            <h2 className='sight'>Sightseeing Features</h2>
             <div className="images-row">
                 {images.slice(0, showAll ? images.length : 3).map((image, index) => (
                     <div key={index} className="image-card" style={{ backgroundImage: `url(${image.src})` }}>
@@ -195,7 +195,7 @@ const MapComponent = () => {
 const Subscribe = ({ name, setName, email, setEmail, phone, setPhone, handleSubscribe }) => {
     return (
         <div className="subscribe-section">
-            <h2 className="subscribe-title">Subscribe to Cassopia Hotel Updates</h2>
+            <h2 className="subscribe-title">Subscribe to Cassopia Hotel</h2>
             <p className="subscribe-description">
                 Stay informed about special offers, events, and news from Cassopia Hotel. 
                 Enter your details below to subscribe to our newsletter!
