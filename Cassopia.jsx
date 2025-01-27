@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Accomodation from './components/Accomodation';
 import Rooms from './components/Rooms';
-import Amenities from './components/Amenities';
+import Features from './components/Features';
 import Book from './components/Book';
 import Clock from './Clock'; // Import the Clock component
 import Contact from './components/Contact';
@@ -26,21 +26,26 @@ import HomeImage from './components/HomeImage'; // Import the new component
 
 const Cassopia = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [searchResults, setSearchResults] = useState(null);
-    const navigate = useNavigate();
+    const [filteredItems, setFilteredItems] = useState([]);
+    
+    // Sample items to search
+    const items = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape'];
 
-    const handleSearch = (event) => {
-        event.preventDefault();
-        const availableRooms = ["Single Room", "Double Room", "Suite", "Deluxe Room"];
-        const amenities = ["WiFi", "Pool", "Parking", "Restaurant"];
-        const allItems = [...availableRooms, ...amenities]; // Fixed syntax error
+    const handleSearch = (e) => {
+        const term = e.target.value;
+        setSearchTerm(term);
+        if (term) {
+            const results = items.filter(item => item.toLowerCase().includes(term.toLowerCase()));
+            setFilteredItems(results);
+        } else {
+            setFilteredItems([]);
+        }
+    };
 
-        const results = allItems.filter(item =>
-            item.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-
-        setSearchResults(results.length > 0 ? results : ["No results found."]);
-        setSearchTerm('');
+    const handleIconClick = () => {
+        if (filteredItems.length > 0) {
+            alert(`Selected: ${filteredItems[0]}`);
+        }
     };
 
     return (
@@ -77,23 +82,21 @@ const Cassopia = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/accomodation">Accomodation</Link></li>
                     <li><Link to="/rooms">Rooms</Link></li>
-                    <li><Link to="/amenities">Amenities</Link></li>
+                    <li><Link to="/features">Features</Link></li>
                     <li><Link to="/book">Book</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/feedback">Feedback</Link></li>
-                    <li>
-                        <form onSubmit={handleSearch} className="search-form">
-                            <input
-                                type="text"
-                                placeholder="Search..."
-                                value={searchTerm}
-                                onChange={(e) => setSearchTerm(e.target.value)}
-                                className="search-input"
-                            />
-                            <button type="submit" className="search-button">
-                                <FaSearch />
-                            </button>
-                        </form>
+                   <li>
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            value={searchTerm}
+                            onChange={handleSearch}
+                            className="search-input"
+                        />
+                        <button className="search-button" onClick={handleIconClick}>
+                            <FaSearch />
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -102,21 +105,19 @@ const Cassopia = () => {
                 <Route path="/" element={<Home navigate={navigate} />} />
                 <Route path="/accomodation" element={<Accomodation />} />
                 <Route path="/rooms" element={<Rooms />} />
-                <Route path="/amenities" element={<Amenities />} />
+                <Route path="/features" element={<Features />} />
                 <Route path="/book" element={<Book />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/feedback" element={<Feedback />} />
             </Routes>
 
-            <div className="search-results">
-                {searchResults && (
-                    <ul>
-                        {searchResults.map((result, index) => (
-                            <li key={index}>{result}</li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+            {filteredItems.length > 0 && (
+                <ul className="results-list">
+                    {filteredItems.map((item, index) => (
+                        <li key={index} className="result-item">{item}</li>
+                    ))}
+                </ul>
+            )}
 
             {/* Show HomeImage only on the home route */}
             <Routes>
