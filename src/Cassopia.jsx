@@ -185,7 +185,7 @@ const Home = ({ navigate }) => {
                    
                 <div className='guesting'>
                                     <h2>
-                                        CLICK TO ADD CASSOPIA-HOTEL ROOM GUESTS...
+                                        CLICK TO ADD CASSOPIA-HOTEL ROOM GUESTS....
                                     </h2>
                                  </div>
                         <div className="input-container guests">
